@@ -2,6 +2,19 @@
 .add-space {
   padding: 5px 0;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.resume-item i {
+  cursor: pointer;
+}
+
 .video-wrapper {
   position      : relative;
   padding-bottom: 56.25%;

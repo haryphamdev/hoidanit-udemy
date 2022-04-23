@@ -27,8 +27,10 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
+
 
 <body>
     <!-- Messenger Chat Plugin Code -->
@@ -70,6 +72,8 @@
                 <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                 <li><a class="nav-link scrollto" href="#courses">Khóa Học</a></li>
                 <li><a class="nav-link scrollto" href="#udemy">Tư vấn</a></li>
+                <li><a class="nav-link scrollto" href="#question">Câu hỏi thường gặp</a></li>
+
                 <!-- <li><a class="nav-link scrollto" href="#why">Why Udemy</a></li> -->
                 <li><a class="nav-link scrollto" href="#about">About Me</a></li>
             </ul>
@@ -115,10 +119,12 @@
                                 </li>
                                 <li>Thời gian khóa học: 20h</li>
                                 <li>Số lượng bài giảng: 35 videos</li>
-                                <li>Video demo kết quả đạt được khi kết thúc khóa học</li>
+                                <li id="ife01" title="Click để mở rộng xem video">Video demo kết quả đạt được
+                                    <i class="bi bi-arrows-expand">(Xem)</i>
+                                </li>
                             </ul>
                             </p>
-                            <div class="video-wrapper">
+                            <div class="video-wrapper hide" id="fe01">
                                 <iframe
                                     src="https://www.youtube.com/embed/CKelwVoEhco?list=PLncHg6Kn2JT45Gg8eOGiqHv2yFqcBXJrK"
                                     title="YouTube video player" frameborder="0"
@@ -145,10 +151,12 @@
                                 </li>
                                 <li>Thời gian khóa học: 4h</li>
                                 <li>Số lượng bài giảng: 26 videos</li>
-                                <li>Video demo kết quả đạt được khi kết thúc khóa học</li>
+                                <li id="ife02" title="Click để mở rộng xem video">Video demo kết quả đạt được
+                                    <i class="bi bi-arrows-expand">(Xem)</i>
+                                </li>
                             </ul>
                             </p>
-                            <div class="video-wrapper">
+                            <div class="video-wrapper hide" id="fe02">
                                 <iframe
                                     src="https://www.youtube.com/embed/HictdSIdeqY?list=PLncHg6Kn2JT5X6F23p-TnV4eqWrhraQNz"
                                     title="YouTube video player" frameborder="0"
@@ -172,10 +180,40 @@
                                 </li>
                                 <li>Thời gian khóa học: 8h</li>
                                 <li>Số lượng bài giảng: 32 videos</li>
-                                <li>Video demo kết quả đạt được khi kết thúc khóa học</li>
+                                <li id="ife03" title="Click để mở rộng xem video">Video demo kết quả đạt được
+                                    <i class="bi bi-arrows-expand">(Xem)</i>
+                                </li>
                             </ul>
                             </p>
-                            <div class="video-wrapper">
+                            <div class="video-wrapper hide" id="fe03">
+                                <iframe
+                                    src="https://www.youtube.com/embed/Z07FzL5eInQ?list=PLncHg6Kn2JT7Duu9pS8F6HH_b_UT2xhkr"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4>Khóa Học IV: Bài Test Fresher Frontend</h4>
+                            <h5>Giải Mã Trình Độ Fresher</h5>
+                            <p><em>Làm Quen Với Yêu Cầu Công Ty Trong Thực Tế</em></p>
+                            <p>
+                            <ul>
+                                <li>Xem trên Udemy.
+                                    <a href="#" target="_blank">Click Here</a>
+                                </li>
+                                <li>Giáo trình khóa học:
+                                    <a href="#" target="_blank">Click Here</a>
+                                </li>
+                                <li>Thời gian khóa học: h</li>
+                                <li>Số lượng bài giảng: videos</li>
+                                <li id="ife04" title="Click để mở rộng xem video">Video demo kết quả đạt được
+                                    <i class="bi bi-arrows-expand">(Xem)</i>
+                                </li>
+                            </ul>
+                            </p>
+                            <div class="video-wrapper hide" id="fe04">
                                 <iframe
                                     src="https://www.youtube.com/embed/Z07FzL5eInQ?list=PLncHg6Kn2JT7Duu9pS8F6HH_b_UT2xhkr"
                                     title="YouTube video player" frameborder="0"
@@ -198,10 +236,12 @@
                                 </li>
                                 <li>Thời gian khóa học: 30h</li>
                                 <li>Số lượng bài giảng: 74 videos</li>
-                                <li>Video demo kết quả đạt được khi kết thúc khóa học</li>
+                                <li id="istack01" title="Click để mở rộng xem video">Video demo kết quả đạt được
+                                    <i class="bi bi-arrows-expand">(Xem)</i>
+                                </li>
                             </ul>
                             </p>
-                            <div class="video-wrapper">
+                            <div class="video-wrapper hide" id="stack01">
                                 <iframe
                                     src="https://www.youtube.com/embed/NytOKfVPO7s?list=PLncHg6Kn2JT7Duu9pS8F6HH_b_UT2xhkr"
                                     title="YouTube video player" frameborder="0"
@@ -223,10 +263,12 @@
                                 </li>
                                 <li>Thời gian khóa học: 36h</li>
                                 <li>Số lượng bài giảng: 80 videos</li>
-                                <li>Video demo kết quả đạt được khi kết thúc khóa học</li>
+                                <li id="istack02" title="Click để mở rộng xem video">Video demo kết quả đạt được
+                                    <i class="bi bi-arrows-expand">(Xem)</i>
+                                </li>
                             </ul>
                             </p>
-                            <div class="video-wrapper">
+                            <div class="video-wrapper hide" id="stack02">
                                 <iframe
                                     src="https://www.youtube.com/embed/0OVfXTWAPCs?list=PLncHg6Kn2JT7vOvooGw-yXcj6MHKrOpTZ"
                                     title="YouTube video player" frameborder="0"
@@ -265,13 +307,11 @@
         <!-- ======= About Me Section ======= -->
         <section id="udemy" class="about">
             <div class="container">
-
                 <div class="section-title">
                     <span>Định Hướng Udemy</span>
                     <h2>Buy Udemy</h2>
                     <p>Tư vấn chọn định hướng phù hợp với các khóa học Udemy</p>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-12 d-flex flex-column align-items-stretch">
                         <div class="content ps-lg-4 d-flex flex-column justify-content-center">
@@ -298,9 +338,9 @@
                                             <span>Khóa III : Redux Ultimate (Full Redux/Redux Toolkit) === 399k </span>
                                         </li>
 
-                                        <!-- <li><i class="bi bi-chevron-right"></i>
-                      <span>Khóa IV : Thực Hành React (coming soon) </span>
-                    </li> -->
+                                        <li><i class="bi bi-chevron-right"></i>
+                                            <span>Khóa IV : Thực Hành React (Bài Test Fresher) === 399k </span>
+                                        </li>
 
                                         <li><i class="bi bi-arrow-return-right"></i>
                                             <strong><span>Mua theo combo:</span> </strong>
@@ -308,17 +348,26 @@
 
                                         <li><i class="bi bi-chevron-right"></i>
                                             <span>
-                                                Full 3 khóa học trên, chỉ cần duy
-                                                nhất khóa React End
-                                                Game: Khóa React End Game (React Cơ Bản/Nâng Cao + Redux) ===
-                                                749k
+                                                <b>Mua 2 khóa học</b> bất kỳ trong 3 khóa (I.React cơ bản, II.React nâng
+                                                cao,
+                                                III.Redux) ===
+                                                499k
                                             </span>
                                         </li>
 
                                         <li><i class="bi bi-chevron-right"></i>
                                             <span>
-                                                Mua 2 khóa bất kỳ trong 3 khóa (React cơ bản, React nâng cao, Redux) ===
-                                                499k
+                                                <b>Mua 3 khóa học</b> (I, II, III) === Full React
+                                                Cơ
+                                                Bản + React Nâng Cao + Redux ===
+                                                699k
+                                            </span>
+                                        </li>
+
+                                        <li><i class="bi bi-chevron-right"></i>
+                                            <span>
+                                                <b>Mua 4 khóa học</b> (I, II, III, IV) === Full Lộ trình Frontend ===
+                                                899k
                                             </span>
                                         </li>
                                     </ul>
@@ -335,7 +384,8 @@
                                             <strong<span><b>Mua lẻ từng khóa học: </b></span></strong>
                                         </li>
                                         <li><i class="bi bi-chevron-right"></i>
-                                            <span>Khóa I : React End Game (Full React + Redux) === 749k </span>
+                                            <span>Khóa I : React End Game === Full Lộ trình Frontend (4 khóa học) ===
+                                                899k</span>
                                         </li>
                                         <li><i class="bi bi-chevron-right"></i>
                                             <span>Khóa II : Full Stack Node.JS, React và JWT === 1099k </span>
@@ -353,7 +403,7 @@
                                         </li>
 
                                         <li><i class="bi bi-chevron-right"></i>
-                                            <span>Khóa I (End Game) và Khóa II (JWT) === 1499k</span>
+                                            <span>Khóa I (End Game) và Khóa II (JWT) === 1599k</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -363,7 +413,6 @@
 
                     </div>
                 </div>
-
 
                 <div class="section-title about">
                     <hr />
@@ -486,6 +535,15 @@
                         </ul>
                     </div>
                 </div>
+
+
+            </div>
+            </div>
+            </div>
+        </section><!-- End About Me Section -->
+
+        <section id="question" class="about">
+            <div class="container">
 
                 <div class="section-title about">
                     <hr />
@@ -782,14 +840,8 @@
                     </li>
                     </ul>
                 </div>
-
             </div>
-
-            </div>
-
-            </div>
-        </section><!-- End About Me Section -->
-
+        </section>
 
 
         <!-- ======= My Services Section ======= -->
@@ -947,6 +999,81 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        $("#ife01").on("click", function () {
+            if ($("#fe01").hasClass("hide")) {
+                $("#fe01").removeClass("hide")
+                $("#fe01").addClass("show")
+            } else {
+                $("#fe01").removeClass("show")
+                $("#fe01").addClass("hide")
+            }
+        });
+
+        $("#ife02").on("click", function () {
+            if ($("#fe02").hasClass("hide")) {
+                $("#fe02").removeClass("hide")
+                $("#fe02").addClass("show")
+            } else {
+                $("#fe02").removeClass("show")
+                $("#fe02").addClass("hide")
+            }
+        });
+
+        $("#ife03").on("click", function () {
+            if ($("#fe03").hasClass("hide")) {
+                $("#fe03").removeClass("hide")
+                $("#fe03").addClass("show")
+            } else {
+                $("#fe03").removeClass("show")
+                $("#fe03").addClass("hide")
+            }
+        });
+
+        $("#ife04").on("click", function () {
+            if ($("#fe04").hasClass("hide")) {
+                $("#fe04").removeClass("hide")
+                $("#fe04").addClass("show")
+            } else {
+                $("#fe04").removeClass("show")
+                $("#fe04").addClass("hide")
+            }
+        });
+
+
+        $("#ife05").on("click", function () {
+            if ($("#fe05").hasClass("hide")) {
+                $("#fe05").removeClass("hide")
+                $("#fe05").addClass("show")
+            } else {
+                $("#fe05").removeClass("show")
+                $("#fe05").addClass("hide")
+            }
+        });
+
+        $("#istack01").on("click", function () {
+            if ($("#stack01").hasClass("hide")) {
+                $("#stack01").removeClass("hide")
+                $("#stack01").addClass("show")
+            } else {
+                $("#stack01").removeClass("show")
+                $("#stack01").addClass("hide")
+            }
+        });
+
+
+        $("#istack02").on("click", function () {
+            if ($("#stack02").hasClass("hide")) {
+                $("#stack02").removeClass("hide")
+                $("#stack02").addClass("show")
+            } else {
+                $("#stack02").removeClass("show")
+                $("#stack02").addClass("hide")
+            }
+        });
+    </script>
+
 </body>
+
 
 </html>
